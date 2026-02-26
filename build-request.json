@@ -1,0 +1,61 @@
+{
+  "kind": "build_request",
+  "title": "Remove stats text and change homepage background to cream",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-16",
+      "text": "Remove the '500 happy buyers' and '60% savings' statistics/text elements from the homepage (HomePage.tsx). These stat badges or counters should be completely removed from the DOM, leaving no placeholder or empty space where they appeared.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "take off the 500 happy buyers and. 60% savings."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The text '500 happy buyers' does not appear anywhere on the homepage",
+        "The text '60% savings' does not appear anywhere on the homepage",
+        "No empty container or blank space remains where these stats previously appeared",
+        "All other homepage sections remain intact and unchanged"
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "text": "Change the homepage background color from white to cream (approximately #FFFDF7 or a warm off-white cream tone) in HomePage.tsx. Apply this to the main page background and any sections that currently use a white (#FFFFFF) background so the overall page feels warm and creamy rather than stark white. All dark brown button styling (#3B1F0E) must remain unchanged.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Make the background color cream instead of white"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The homepage main background color is cream (warm off-white, e.g., #FFFDF7 or equivalent) instead of pure white",
+        "Sections previously using a white background now use the cream color",
+        "Text remains legible against the cream background with adequate contrast",
+        "All dark brown buttons (#3B1F0E) remain unchanged in color",
+        "No other pages or components are affected by this background color change"
+      ]
+    }
+  ],
+  "constraints": [
+    "All dark brown button styling (#3B1F0E) must remain unchanged",
+    "The hero image (hero-banner-prom.dim_1200x800.jpg) must remain unchanged",
+    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui"
+  ],
+  "nonGoals": [
+    "Changing background colors on pages other than the homepage",
+    "Modifying any backend logic",
+    "Altering any button styles or colors",
+    "Changing the visual theme beyond the homepage background color"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

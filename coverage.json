@@ -1,0 +1,48 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-26T03:51:44.504Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-16",
+        "summary": "Remove the '500 happy buyers' and '60% savings' statistics/text elements from the homepage (HomePage.tsx). These stat badges or counters should be completely removed from the DOM, leaving no placeholder or empty space where they appeared.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/HomePage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/HomePage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-17",
+        "summary": "Change the homepage background color from white to cream (approximately #FFFDF7 or a warm off-white cream tone) in HomePage.tsx. Apply this to the main page background and any sections that currently use a white (#FFFFFF) background so the overall page feels warm and creamy rather than stark white. All dark brown button styling (#3B1F0E) must remain unchanged.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/HomePage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/HomePage.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/pages/HomePage.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

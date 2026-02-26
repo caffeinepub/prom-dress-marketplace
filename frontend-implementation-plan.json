@@ -1,0 +1,42 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Remove stats text and change homepage background to cream",
+  "requirements": [
+    {
+      "id": "REQ-16",
+      "summary": "Remove the '500 happy buyers' and '60% savings' statistics/text elements from the homepage",
+      "acceptanceCriteria": [
+        "The text '500 happy buyers' does not appear anywhere on the homepage",
+        "The text '60% savings' does not appear anywhere on the homepage",
+        "No empty container or blank space remains where these stats previously appeared",
+        "All other homepage sections remain intact and unchanged"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Remove all JSX elements and containers that display the '500 happy buyers' and '60% savings' statistics from the HomePage component. Delete the entire stat badges section including any wrapper divs, leaving no placeholder or empty space. Ensure the remaining hero section, featured listings, and recent listings sections remain intact and properly structured."
+        }
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "summary": "Change the homepage background color from white to cream",
+      "acceptanceCriteria": [
+        "The homepage main background color is cream (warm off-white, e.g., #FFFDF7 or equivalent) instead of pure white",
+        "Sections previously using a white background now use the cream color",
+        "Text remains legible against the cream background with adequate contrast",
+        "All dark brown buttons (#3B1F0E) remain unchanged in color",
+        "No other pages or components are affected by this background color change"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Replace all white background classes (bg-white) and white background color references with a cream background color (#FFFDF7 or equivalent warm off-white tone) in the HomePage component. Apply this to the main page container and any section wrappers that currently use white backgrounds. Ensure all text remains legible with adequate contrast. Do not modify any button styles, particularly the dark brown buttons (#3B1F0E), and do not change any other color values beyond backgrounds."
+        }
+      ]
+    }
+  ]
+}

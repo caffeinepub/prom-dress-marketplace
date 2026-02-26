@@ -1,0 +1,14 @@
+{
+  "frontend/src/pages/BrowseListingsPage.tsx": "Browse/search page with filterable paginated dress grid — all action buttons (filters, pagination, chips) styled dark brown (#3B1F0E).",
+  "frontend/src/pages/ListingDetailPage.tsx": "Listing detail page with photo gallery, dress attributes, and inquiry form — all buttons including send message styled dark brown (#3B1F0E).",
+  "frontend/src/pages/SellerDashboardPage.tsx": "Authenticated seller dashboard with stats and listing management — fixed `useGetSellerListings` call to use `identity?.getPrincipal()` (which returns `undefined` when not set) instead of `?? null`.",
+  "frontend/src/pages/HomePage.tsx": "Homepage with hero carousel, search bar, a reduced stats section (only \"Dresses Listed\" and \"Featured Picks\" — \"Happy Buyers\" and \"Avg. Savings\" removed), featured/recent listings, CTA sections, and footer — background color is now cream (#FFFDF7) throughout, and all dark brown buttons/CTAs remain unchanged.",
+  "frontend/src/index.css": "Global styles with OKLCH color system, custom fonts (Playfair Display + Lato), and CSS variable definitions for light/dark modes including dark brown brand color variables.",
+  "frontend/src/components/Header.tsx": "Sticky navigation header with logo, desktop nav links, auth button, mobile menu toggle — all buttons styled dark brown (#3B1F0E) with inline hover state.",
+  "frontend/src/components/ListingManagementCard.tsx": "Seller listing card with edit/promote/delete actions and messages panel — fixed `useGetMessages` call to pass `undefined` instead of `null` when messages are hidden.",
+  "frontend/src/components/CreateListingForm.tsx": "Form for creating new dress listings with photo upload — fixed to use the correct `useAddListing` hook instead of the non-existent `useCreateListing`.",
+  "frontend/src/components/EditListingForm.tsx": "Form for editing existing dress listings with photo management — save button styled dark brown (#3B1F0E), cancel button neutral.",
+  "frontend/src/components/PhotoGallery.tsx": "Photo gallery with prev/next navigation and thumbnails — navigation arrow buttons styled dark brown (#3B1F0E).",
+  "frontend/src/components/ProfileSetupModal.tsx": "Profile setup dialog for new users with name, role, and bio fields — submit button and role selector styled dark brown (#3B1F0E).",
+  "frontend/src/App.tsx": "Main app with routing setup; introduces an AppShell component that manages profile setup modal visibility by checking auth state and user profile, passing proper open/onComplete props to ProfileSetupModal."
+}

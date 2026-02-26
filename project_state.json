@@ -1,0 +1,221 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 15,
+  "summary": "A marketplace website where users can buy, sell, and advertise prom dresses. Includes listings, search/browse, user accounts, and a way to contact sellers or purchase dresses.",
+  "architectural_notes": [
+    "Marketplace focus: prom dresses — support buying, selling, and advertising listings",
+    "Each listing should support images, price, size, color, condition, and description fields"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-build-a-homepage-featuring-a-hero-banner-featured-promoted-dress-listings-carousel-and-a-search-bar-with-filter-controls-size-price-color-condition",
+      "title": "Build a homepage featuring a hero banner, featured/promoted dress listings carousel, and a search bar with filter controls (size, price, color, condition).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-dress-listing-browsing-and-search-results-page-that-displays-listing-cards-with-photo-title-size-price-and-condition-with-applied-filters-shown-as-chips-and-pagination-controls",
+      "title": "Build a dress listing browsing and search results page that displays listing cards with photo, title, size, price, and condition, with applied filters shown as chips and pagination controls.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-listing-detail-page-showing-all-dress-information-photos-gallery-price-size-color-condition-description-seller-info-and-a-contact-inquiry-form-for-buyers-to-message-the-seller",
+      "title": "Build a listing detail page showing all dress information (photos gallery, price, size, color, condition, description, seller info) and a contact/inquiry form for buyers to message the seller.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-seller-dashboard-where-authenticated-sellers-can-create-new-listings-edit-or-delete-existing-listings-view-inquiries-received-and-promote-their-listings",
+      "title": "Build a seller dashboard where authenticated sellers can create new listings, edit or delete existing listings, view inquiries received, and promote their listings.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-glamorous-elegant-visual-theme-throughout-the-site-using-a-palette-of-soft-rose-gold-champagne-and-ivory-with-tasteful-serif-typography-and-sparkle-floral-accents-evoking-a-high-end-prom-boutique-aesthetic",
+      "title": "Apply a glamorous, elegant visual theme throughout the site using a palette of soft rose gold, champagne, and ivory with tasteful serif typography and sparkle/floral accents, evoking a high-end prom boutique aesthetic.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-hero-banner-dress-image-on-the-homepage-with-the-newly-generated-hero-image-hero-banner-dim-1200x800-jpg-saved-to-frontend-public-assets-generated-update-homepage-tsx-to-reference-this-new-image-as-the-hero-background-or-featured-image",
+      "title": "Replace the current hero banner dress image on the homepage with the newly generated hero image (hero-banner.dim_1200x800.jpg) saved to frontend/public/assets/generated/. Update HomePage.tsx to reference this new image as the hero background or featured image.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-change-the-color-of-the-button-at-xpath-html-1-body-1-div-1-div-1-main-1-div-1-section-1-div-1-div-2-div-1-div-1-div-2-a-1-button-1-the-first-cta-button-in-the-hero-section-of-homepage-tsx-to-a-dark-brown-color-e-g-3b1f0e-or-equivalent-apply-this-as-an-inline-style-or-a-dedicated-tailwind-class-override-so-only-this-specific-button-is-affected",
+      "title": "Change the color of the button at XPath /html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/section[1]/div[1]/div[2]/div[1]/div[1]/div[2]/a[1]/button[1] (the first CTA button in the hero section of HomePage.tsx) to a dark brown color (e.g., #3B1F0E or equivalent). Apply this as an inline style or a dedicated Tailwind class override so only this specific button is affected.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-change-all-buttons-site-wide-to-the-same-dark-brown-color-3b1f0e-or-equivalent-used-on-the-hero-cta-button-apply-this-consistently-to-every-button-element-across-all-pages-and-components-including-the-search-filter-button-in-the-hero-search-bar-section-2-the-carousel-navigation-arrow-buttons-section-3-svg-buttons-the-browse-all-dresses-link-button-section-4-the-sell-your-dress-cta-button-section-4-the-bottom-cta-button-section-5-and-the-mobile-menu-toggle-button-in-the-header-specifically-target-the-elements-identified-by-the-following-xpaths-in-homepage-tsx-and-header-tsx-html-1-body-1-div-1-div-1-main-1-div-1-section-2-div-1-div-1-div-1-div-1-button-2-html-1-body-1-div-1-div-1-main-1-div-1-section-3-div-1-div-1-div-1-div-1-svg-1-html-1-body-1-div-1-div-1-main-1-div-1-section-3-div-1-div-1-div-2-div-1-svg-1-html-1-body-1-div-1-div-1-main-1-div-1-section-3-div-1-div-1-div-3-div-1-svg-1-html-1-body-1-div-1-div-1-main-1-div-1-section-4-div-1-div-1-a-1-html-1-body-1-div-1-div-1-main-1-div-1-section-4-div-1-div-2-a-1-button-1-html-1-body-1-div-1-div-1-main-1-div-1-section-5-div-1-a-1-button-1-html-1-body-1-div-1-div-1-header-1-div-1-button-1-svg-1-path-1-also-apply-the-dark-brown-color-to-all-buttons-in-browselistingspage-tsx-listingdetailpage-tsx-sellerdashboardpage-tsx-searchbar-tsx-filterchips-tsx-listingcard-tsx-listingmanagementcard-tsx-createlistingform-tsx-editlistingform-tsx-inquiryform-tsx-profilesetupmodal-tsx-and-any-other-components-containing-buttons-use-inline-styles-or-dedicated-tailwind-class-overrides-with-backgroundcolor-3b1f0e-and-appropriate-hover-active-states-e-g-5a2f14-on-hover",
+      "title": "Change all buttons site-wide to the same dark brown color (#3B1F0E or equivalent) used on the hero CTA button. Apply this consistently to every button element across all pages and components, including: the search/filter button in the hero search bar (section 2), the carousel navigation arrow buttons (section 3 SVG buttons), the 'Browse All Dresses' link/button (section 4), the 'Sell Your Dress' CTA button (section 4), the bottom CTA button (section 5), and the mobile menu toggle button in the Header. Specifically target the elements identified by the following XPaths in HomePage.tsx and Header.tsx: /html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/section[2]/div[1]/div[1]/div[1]/div[1]/button[2], /html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/section[3]/div[1]/div[1]/div[1]/div[1]/svg[1], /html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/section[3]/div[1]/div[1]/div[2]/div[1]/svg[1], /html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/section[3]/div[1]/div[1]/div[3]/div[1]/svg[1], /html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/section[4]/div[1]/div[1]/a[1], /html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/section[4]/div[1]/div[2]/a[1]/button[1], /html[1]/body[1]/div[1]/div[1]/main[1]/div[1]/section[5]/div[1]/a[1]/button[1], /html[1]/body[1]/div[1]/div[1]/header[1]/div[1]/button[1]/svg[1]/path[1]. Also apply the dark brown color to all buttons in BrowseListingsPage.tsx, ListingDetailPage.tsx, SellerDashboardPage.tsx, SearchBar.tsx, FilterChips.tsx, ListingCard.tsx, ListingManagementCard.tsx, CreateListingForm.tsx, EditListingForm.tsx, InquiryForm.tsx, ProfileSetupModal.tsx, and any other components containing buttons. Use inline styles or dedicated Tailwind class overrides with backgroundColor: '#3B1F0E' and appropriate hover/active states (e.g., #5a2f14 on hover).",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-save-the-uploaded-image-img-1189-1-jpeg-as-the-new-homepage-hero-image-at-frontend-public-assets-generated-hero-banner-prom-dim-1200x800-jpg-and-update-homepage-tsx-to-use-this-image-as-the-hero-background-or-featured-image-replacing-whatever-hero-image-is-currently-displayed-all-dark-brown-button-styling-3b1f0e-must-remain-unchanged",
+      "title": "Save the uploaded image IMG_1189-1.jpeg as the new homepage hero image at frontend/public/assets/generated/hero-banner-prom.dim_1200x800.jpg and update HomePage.tsx to use this image as the hero background or featured image, replacing whatever hero image is currently displayed. All dark brown button styling (#3B1F0E) must remain unchanged.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-500-happy-buyers-and-60-savings-statistics-text-elements-from-the-homepage-homepage-tsx-these-stat-badges-or-counters-should-be-completely-removed-from-the-dom-leaving-no-placeholder-or-empty-space-where-they-appeared",
+      "title": "Remove the '500 happy buyers' and '60% savings' statistics/text elements from the homepage (HomePage.tsx). These stat badges or counters should be completely removed from the DOM, leaving no placeholder or empty space where they appeared.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-change-the-homepage-background-color-from-white-to-cream-approximately-fffdf7-or-a-warm-off-white-cream-tone-in-homepage-tsx-apply-this-to-the-main-page-background-and-any-sections-that-currently-use-a-white-ffffff-background-so-the-overall-page-feels-warm-and-creamy-rather-than-stark-white-all-dark-brown-button-styling-3b1f0e-must-remain-unchanged",
+      "title": "Change the homepage background color from white to cream (approximately #FFFDF7 or a warm off-white cream tone) in HomePage.tsx. Apply this to the main page background and any sections that currently use a white (#FFFFFF) background so the overall page feels warm and creamy rather than stark white. All dark brown button styling (#3B1F0E) must remain unchanged.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "User registration and login (buyer/seller accounts)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Create and manage dress listings (photos, price, size, description)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Browse and search/filter prom dress listings",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Contact seller or express interest in a listing",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Advertise/promote listings for greater visibility",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Implement a backend data model and actor methods for user accounts with roles (buyer/seller), including registration, login via Internet Identity, and profile management.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Implement backend data model and CRUD methods for prom dress listings, including fields: title, description, price, size, condition, color, photos (URLs), seller ID, availability status, and a featured/promoted flag.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Implement backend query methods to browse, search, and filter prom dress listings by keyword, size, price range, color, and condition.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Implement a backend messaging system allowing buyers to send inquiries or expressions of interest to sellers about a specific listing.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Implement a backend method for sellers to promote/advertise their listing, boosting its visibility in search results and the homepage.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Update site color theme to dark neutral colors (not too dark) — replacing the current rose gold/champagne/ivory palette",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Replace the current rose gold/champagne/ivory color palette with a dark neutral theme throughout the site. The palette should use deep charcoal, warm slate, and soft greige tones — dark enough to feel sophisticated but not so dark as to feel heavy or hard to read. Update CSS custom properties in frontend/src/index.css and frontend/index.css, the Tailwind color palette in frontend/tailwind.config.js, and all page/component files (HomePage.tsx, BrowseListingsPage.tsx, ListingDetailPage.tsx, SellerDashboardPage.tsx, Header.tsx, Footer.tsx, Layout.tsx, ListingCard.tsx, SearchBar.tsx, FilterChips.tsx, and all other components) to use the new neutral dark palette. Ensure text remains legible with appropriate contrast ratios, and accent colors (for badges, buttons, highlights) use warm taupe, muted gold, or soft warm-white tones that complement the dark neutral base.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Change button color to dark brown",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Change all buttons site-wide to the same dark brown color (#3B1F0E or equivalent) used on the hero CTA button",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Revert the homepage hero image back to the original/previous image while keeping all buttons dark brown",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-16",
+      "summary": "Remove '500 happy buyers' and '60% savings' stats/text from the homepage",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-17",
+      "summary": "Change homepage background color from white to cream",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Prom Dress Marketplace",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-remove-the-500-happy-buyers-and-60-savings-statistics-text-elements-from-the-homepage-homepage-tsx-these-stat-badges-or-counters-should-be-completely-removed-from-the-dom-leaving-no-placeholder-or-empty-space-where-they-appeared",
+      "featureTitle": "Remove the '500 happy buyers' and '60% savings' statistics/text elements from the homepage (HomePage.tsx). These stat badges or counters should be completely removed from the DOM, leaving no placeholder or empty space where they appeared.",
+      "files": [
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-16"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-change-the-homepage-background-color-from-white-to-cream-approximately-fffdf7-or-a-warm-off-white-cream-tone-in-homepage-tsx-apply-this-to-the-main-page-background-and-any-sections-that-currently-use-a-white-ffffff-background-so-the-overall-page-feels-warm-and-creamy-rather-than-stark-white-all-dark-brown-button-styling-3b1f0e-must-remain-unchanged",
+      "featureTitle": "Change the homepage background color from white to cream (approximately #FFFDF7 or a warm off-white cream tone) in HomePage.tsx. Apply this to the main page background and any sections that currently use a white (#FFFFFF) background so the overall page feels warm and creamy rather than stark white. All dark brown button styling (#3B1F0E) must remain unchanged.",
+      "files": [
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-17"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
